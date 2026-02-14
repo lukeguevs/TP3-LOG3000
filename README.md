@@ -21,6 +21,11 @@ L'objectif de ce projet est de développer une calculatrice disponbile sur le we
 
 ## Tests
 
+Afin d'exécuter les tests, assurez-vous d'avoir installé pytest. Si vous ne l'avez pas encore fait, vous pouvez l'installer en utilisant pip :
+`pip install pytest`
+Ensuite, pour exécuter les tests, ouvrez votre terminal, naviguez jusqu'au répertoire de votre projet et lancez la commande suivante à partir de la racine du projet :
+`python -m pytest`.
+
 ## Flux de contribution
 
 
