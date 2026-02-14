@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+tp3_log3000.egg-info/
+pytest_cache/
