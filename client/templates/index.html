@@ -7,12 +7,22 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+<!--
+    Interface utilisateur principale de la calculatrice
+    Utilise Flask pour gérer les requêtes POST pendant le calcul
+ -->
 <div class="calculator">
    <h1>Flask Calculator</h1>
+    <!-- Formulaire POST pour soumettre l'expression à calculer -->
    <form method="POST">
+       <!-- Champ d'affichage en lecture seule (readonly) qui montre l'expression et le résultat -->
       <input type="text" name="display" id="display" value="{{ result }}" readonly>
 
       <div class="buttons">
+          <!--
+          Boutons numériques
+          Utilisent appendToDisplay() pour construire l'expression à calculer
+           -->
          <button type="button" class="btn" onclick="appendToDisplay('1')">1</button>
          <button type="button" class="btn" onclick="appendToDisplay('2')">02</button>
          <button type="button" class="btn" onclick="appendToDisplay('3')">3</button>
@@ -29,7 +39,9 @@
          <button type="button" class="btn operator" onclick="appendToDisplay('*')"></button>
 
          <button type="button" class="btn" onclick="appendToDisplay('0')">0</button>
+          <!-- Bouton Clear pour effacer l'affichage -->
          <button type="button" class="btn" onclick="clearDisplay()">C</button>
+          <!-- Bouton égal (=) pour soumettre le formulaire et calculer le résultat -->
          <button type="submit" class="btn operator">=</button>
          <button type="button" class="btn operator" onclick="appendToDisplay('/')"></button>
       </div>
@@ -37,11 +49,18 @@
 </div>
 
 <script>
+    /**
+     * Ajoute un caractère (chiffre ou opérateur) à l'affichage de la calculatrice
+     * @param {string} value - Le caractère à ajouter à l'expression affichée
+     */
    function appendToDisplay(value) {
       const display = document.getElementById('display');
       display.value += value;
    }
 
+    /**
+     * Efface au complet le contenu de l'affichage de la calculatrice
+     */
    function clearDisplay() {
       document.getElementById('display').value = '';
    }
