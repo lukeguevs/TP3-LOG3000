@@ -8,9 +8,9 @@ def add(a,b):
     return a + b
 
 def subtract(a,b):
-    # Soustrait le premier nombre du deuxième
+    # Soustrait le 2e nombre du 1er
 
-    return b - a
+    return a - b
 
 def multiply(a,b):
     # Multiplie 2 nombres
