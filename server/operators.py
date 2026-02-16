@@ -18,6 +18,6 @@ def multiply(a,b):
     return a * b
 
 def divide(a,b):
-    # Effectue une division entière de a par b
-
-    return a // b
+    # Effectue une division de a par b
+    # Arrondie à 8 décimales près, pour contourner le problème de la virgule flottante en Python
+    return round(a / b, 8)
