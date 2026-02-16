@@ -52,8 +52,8 @@ class TestOperators(unittest.TestCase):
     def test_divide(self):
         # Division exacte
         self.assertEqual(divide(6, 3), 2)
-        # Vérification de la division entière (troncature)
-        self.assertEqual(divide(5, 2), 2)
+        # Vérification que ce n'est pas la division entière (troncature)
+        self.assertEqual(divide(5, 2), 2.5)
         # Vérifie qu'une division par zéro lève une exception
         with self.assertRaises(ZeroDivisionError):
             divide(1, 0)
