@@ -55,10 +55,9 @@ def calculate(expr: str):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    """
-    Route principale de l'application
-    Gère les requêtes GET et POST
-    """
+    # Route principale de l'application
+    #Gère les requêtes GET et POST
+
     result = ""
     if request.method == 'POST':
         expression = request.form.get('display', '')
