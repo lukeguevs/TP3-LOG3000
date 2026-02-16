@@ -55,7 +55,7 @@ pip install flask pytest
 **Lancer l'application**
 
 ```
-python server/app.py
+python -m server.app
 ```
 
 **Accéder l'application**
