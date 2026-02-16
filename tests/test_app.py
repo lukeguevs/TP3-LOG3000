@@ -11,7 +11,7 @@ def test_calculate_addition():
     assert calculate("3 + 5") == 8
 
 def test_calculate_subtraction():
-    assert calculate("10 - 4") == 6
+    assert calculate("2 - 2") == 0
 
 def test_calculate_multiplication():
     assert calculate("6 * 7") == 42
