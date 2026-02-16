@@ -54,6 +54,8 @@ class TestOperators(unittest.TestCase):
         self.assertEqual(divide(6, 3), 2)
         # Vérification de la division entière (troncature)
         self.assertEqual(divide(5, 2), 2)
+        # Vérification de la division avec des nombres flottants
+        self.assertEqual(divide(10, 4), 2.5)
         # Vérifie qu'une division par zéro lève une exception
         with self.assertRaises(ZeroDivisionError):
             divide(1, 0)
