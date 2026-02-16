@@ -6,7 +6,7 @@
 """
 
 from flask import Flask, request, render_template
-from operators import add, subtract, multiply, divide
+from .operators import add, subtract, multiply, divide
 
 # Initialisation de l'application Flask avec le dossier de templates personnalisé et le dossier de fichiers statiques
 app = Flask(__name__, template_folder='../client/templates', static_folder='../client/static')
