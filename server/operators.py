@@ -15,7 +15,7 @@ def subtract(a,b):
 def multiply(a,b):
     # Multiplie 2 nombres
 
-    return a ** b
+    return a * b
 
 def divide(a,b):
     # Effectue une division entière de a par b
